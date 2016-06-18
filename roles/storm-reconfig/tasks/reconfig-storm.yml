@@ -1,0 +1,8 @@
+---
+- name: Configuring storm.yaml
+  template: src=storm.yaml.j2 dest={{ storm_dir }}/conf/storm.yaml
+  remote_user: "{{ user }}"
+
+- name: Configuring storm_env.ini
+  template: src=storm_env.ini.j2 dest={{ storm_dir }}/conf/storm_env.ini
+  remote_user: "{{ user }}"

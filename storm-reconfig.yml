@@ -1,0 +1,5 @@
+---
+- hosts: "{{ env }}_storm_cluster"
+  roles:
+    - common
+    - storm-reconfig
